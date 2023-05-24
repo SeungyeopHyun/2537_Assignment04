@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="index.js"></script>
+</head>
+<body>
+  <div class="container">
+    <h1>Card game</h1>
+    <div class="buttons">
+      <div class="button-row">
+        <button id="easy-btn">Easy(3pairs)</button>
+        <button id="medium-btn">Medium(6pairs)</button>
+        <button id="hard-btn">Hard(12pairs)</button>
+      </div>
+      <div class="button-row">
+        <button id="reset-btn">Reset</button>
+        <button id="start-btn">Start</button>
+      </div>
+    </div>
+
+    <div id="game_grid"></div>
+
+    <div id="game_stats">
+      <div>Total Pairs: <span id="totalPairs">0</span></div>
+      <div>Matched Pairs: <span id="matchedPairs">0</span></div>
+      <div>Pairs Left: <span id="pairsLeft">0</span></div>
+      <div>Clicks: <span id="clicksCount">0</span></div>
+      <div>Total: <span id="timelevel"></span> seconds. 
+        <span id="timer">0</span> seconds for this game
+      </div>
+    </div>
+  
+    <div class="mode-buttons">
+      <button id="dark-mode-btn">Dark Mode</button>
+      <button id="light-mode-btn">Light Mode</button>
+      <button id="power-up-btn">Power Up</button>
+    </div>
+  </div>
+</body>
+</html> 
