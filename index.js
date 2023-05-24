@@ -96,6 +96,15 @@ const cardClickHandler = function () {
   }
 };
 
+const resetGame = () => {
+  resetTimer();
+  matchedPairs = 0;
+  pairsLeft = totalPairs;
+  clicksCount = 0;
+  updateStats();
+  createGameGrid();
+  startTimer(); 
+};
 
 const resetTimer = () => {
   clearInterval(gameTimer);
@@ -219,15 +228,9 @@ const setup = () => {
     updateStats();
     $("#power-up-btn").show();
   });
-$('#reset-btn').on('click', () => {
-  resetTimer();
-  matchedPairs = 0;
-  pairsLeft = totalPairs;
-  clicksCount = 0;
-  $('#start-btn').show();
-  $('.card').removeClass('flip matched');
-  updateStats();
-});
+  $('#reset-btn').on('click', () => {
+    resetGame();
+  });
 
   $('#easy-btn').on('click', () => {
     rows = 2;

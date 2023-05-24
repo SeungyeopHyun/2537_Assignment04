@@ -12,6 +12,18 @@
 <body>
   <div class="container">
     <h1>Card game</h1>
+
+    <div id="game_stats">
+      <div>Total Pairs: <span id="totalPairs">0</span> || Pairs you found:<span id="matchedPairs">0</span> </div>
+      <div>Pairs Left: <span id="pairsLeft">0</span></div>
+      <div>Clicks count: <span id="clicksCount">0</span></div>
+      <div>Total: <span id="timelevel"></span> seconds. 
+        <span id="timer">0</span> seconds for this game
+      </div>
+    </div>
+
+    <div id="game_grid"></div>
+
     <div class="buttons">
       <div class="button-row">
         <button id="easy-btn">Easy(3pairs)</button>
@@ -21,18 +33,6 @@
       <div class="button-row">
         <button id="reset-btn">Reset</button>
         <button id="start-btn">Start</button>
-      </div>
-    </div>
-
-    <div id="game_grid"></div>
-
-    <div id="game_stats">
-      <div>Total Pairs: <span id="totalPairs">0</span></div>
-      <div>Matched Pairs: <span id="matchedPairs">0</span></div>
-      <div>Pairs Left: <span id="pairsLeft">0</span></div>
-      <div>Clicks: <span id="clicksCount">0</span></div>
-      <div>Total: <span id="timelevel"></span> seconds. 
-        <span id="timer">0</span> seconds for this game
       </div>
     </div>
   

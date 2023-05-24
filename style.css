@@ -50,6 +50,7 @@ button {
   background-color: #007bff;
   color: #fff;
   cursor: pointer;
+  border-radius: 5px;
 }
 
 .stats {
@@ -57,13 +58,15 @@ button {
   justify-content: space-between;
   margin-bottom: 20px;
 }
+
 .selected {
   background-color: rgb(47, 68, 231);
 }
+
 button:hover {
   background-color: #007bffbb;
-  
 }
+
 #game_stats {
   display: flex;
   flex-direction: column;
@@ -72,6 +75,7 @@ button:hover {
   margin-bottom: 20px;
   font-size: 24px;
 }
+
 .mode-buttons {
   display: flex;
   justify-content: center;
@@ -96,6 +100,7 @@ button:hover {
   background-color: #dedede;
   color: #333;
 }
+
 .dark-mode {
   background-color: #333;
   color: #fff;
@@ -107,13 +112,12 @@ button:hover {
 
 .card {
   position: relative;
-  transition:transform 1s;
+  transition: transform 1s;
   perspective: 1000px;
   transform-style: preserve-3d;
   width: 80%;
   height: auto;
 }
-
 
 .card .front_face {
   transform: rotateY(180deg);
@@ -137,3 +141,23 @@ button:hover {
   transform: rotateY(0deg);
   z-index: 1;
 }
+
+#dark-mode-btn {
+  background-color: #333;
+  color: #fff;
+}
+
+#light-mode-btn {
+  background-color: #dedede;
+  color: #333;
+}
+
+#power-up-btn {
+  background-color: #f44336;
+  color: #fff;
+}
+
+#power-up-btn:hover {
+  background-color: #f44336bb;
+}
+
